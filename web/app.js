@@ -4,6 +4,8 @@ var main = function () {
     $('.main').fadeIn(1000);
 
     var ControlOut = false;
+
+    // Pull out panel
     $('.hControl').click(function () {
         $('.control').animate({
             left: '0px'
@@ -20,6 +22,8 @@ var main = function () {
             left: '0px'
         });
     });
+
+    // 
 }
 
 $(document).ready(main);
