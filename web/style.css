@@ -1,0 +1,62 @@
+﻿body
+{
+  background-image: url('http://coarchitects.com/wp-content/uploads/2012/12/Engineering-2_03.jpg');
+  left: 0;
+  margin: 0;
+  overflow: hidden;
+  position: absolute;
+}
+
+.main
+{
+    padding: 20px;
+}
+
+.titleBar
+{
+    height: 100%;
+    font-family:'Century Gothic';
+    color:bisque;
+    font-size:xx-large;
+    text-shadow: 7px 12px 12px #808080;
+}
+
+.optionBar
+{
+    background-image: url('http://cdn01.wallconvert.com/_media/wallpapers_1680x1050/1/2/black-wood-10727.jpg');
+    height: 100%;
+    font-family:'Century Gothic';
+    color:bisque;
+    font-size:small;
+}
+
+.optionBar ul
+{
+    padding: 10px 10px 10px 10px;
+}
+
+.optionBar li
+{
+    display: inline;
+}
+
+.control
+{
+    
+    
+    font-family:'Century Gothic';
+    color:bisque;
+    
+
+    background: #202024 url('http://s3.amazonaws.com/codecademy-content/courses/ltp2/img/uber/black-thread.png') repeat left top;
+    left: -300px;  /* start off behind the scenes */
+    height: 100%;
+    position: fixed;
+    width: 300px;
+}
+
+.control ul
+{
+    padding: 10px 10px 10px 10px;
+    list-style-type:none;
+}
