@@ -99,7 +99,8 @@ table{
 td {
     border: 1px;
     opacity: 40;
-    height:100px;
+    height:50%;
+    width:50%;
     padding: 10px;
     background-color:gainsboro;
 }
@@ -120,14 +121,14 @@ tr{
 }
 .map {
     float: left;
-    width: 40vw;
+    width: 40%;
     height: 50vh;
     padding: 20px;
 }
 
 .btnLayout {
     float: right;
-    width: 50vw;
-    height: 50vh;
+    width: 50%;
+    height: 50%;
     padding: 20px;
 }
