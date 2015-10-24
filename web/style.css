@@ -6,6 +6,7 @@
   left: 0;
   margin: 0;
   overflow: hidden;
+  height:100vh;
 }
 
 .main
@@ -13,6 +14,7 @@
     display:none;
     position:relative;
     margin:0;
+    height:100%;
 }
 
 .titleBar
@@ -133,17 +135,16 @@ tr{
 .map {
     float: left;
     width: 40%;
-    height: 50vh;
+    height: 70vh;
     padding: 20px;
+    background: #202024 url('http://s3.amazonaws.com/codecademy-content/courses/ltp2/img/uber/black-thread.png') repeat left top;
+    color:bisque;
 }
 
 .btnLayout {
     float: right;
     width: 50%;
-    height: 50%;
+    height: 70vh;
     padding: 20px;
-}
-
-.testButton {
-
+    overflow-y: scroll;
 }
