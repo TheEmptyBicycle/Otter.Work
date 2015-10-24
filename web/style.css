@@ -1,9 +1,11 @@
 ﻿body
 {
+    background:no-repeat;
+    background-color:slategrey;
   background-image: url('http://coarchitects.com/wp-content/uploads/2012/12/Engineering-2_03.jpg');
   left: 0;
   margin: 0;
-  overflow: hidden;
+  overflow: auto;
 }
 
 .main
@@ -20,6 +22,7 @@
     color:bisque;
     font-size:large;
     text-shadow: 7px 12px 12px #808080;
+    display:none;
 }
 
 .titleBar ul
@@ -38,6 +41,7 @@
     font-family:'Century Gothic';
     color:bisque;
     font-size:small;
+    display:none;
 }
 
 .optionBar ul
@@ -112,6 +116,7 @@ tr{
 .mainScreen {
     font-family: 'Century Gothic';
     position:relative;
+    display:none;
 }
 .map {
     float: left;

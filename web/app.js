@@ -1,7 +1,9 @@
 // JavaScript source code
 var main = function () {
-    $('.main').hide();
-    $('.main').fadeIn(1000);
+    $('.main').fadeIn(500);
+    $('.optionBar').fadeIn(500);
+    $('.titleBar').fadeIn(500);
+    $('.mainScreen').fadeIn(500);
 
     var ControlOut = false;
 
