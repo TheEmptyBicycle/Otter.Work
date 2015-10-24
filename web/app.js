@@ -1,6 +1,6 @@
 // JavaScript source code
 var main = function () {
-    $('').hide();
+    $('.main').hide();
     $('.main').fadeIn(1000);
 
     var ControlOut = false;
@@ -10,17 +10,17 @@ var main = function () {
         $('.control').animate({
             left: '0px'
         }, 200);
-        $('body').animate({
+        $('.main').animate({
             left: '300px'
-        });
+        }, 200);
     });
     $('.icon-close').click(function () {
         $('.control').animate({
             left: '-300px'
         }, 200);
-        $('body').animate({
+        $('.main').animate({
             left: '0px'
-        });
+        }, 200);
     });
 
     // 
