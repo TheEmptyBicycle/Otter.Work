@@ -4,7 +4,6 @@
   left: 0;
   margin: 0;
   overflow: hidden;
-  position: absolute;
 }
 
 .main
@@ -49,6 +48,22 @@
     display: inline;
 }
 
+.optionBar a{
+    text-decoration: none;
+}
+
+.optionBar a:link{
+    color:bisque;
+}
+
+.optionBar a:visited{
+    color:bisque;
+}
+
+.optionBar a:hover{
+    color:aqua;
+}
+
 .control
 {
     
@@ -73,11 +88,24 @@
 table{
     width:100%;
     position: center;
+    text-shadow: 2px 2px 2px #808080;
 }
 
-table, th, td {
-    border: 1px solid black;
+td {
+    border: 1px;
+    opacity: 40;
     height:100px;
+    padding: 10px;
+    background-color:gainsboro;
+}
+
+td:hover {
+    background-color:burlywood;
+    color:coral;
+}
+
+tr{
+    background-color:gainsboro;
 }
 
 .mainScreen {

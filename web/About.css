@@ -1,0 +1,13 @@
+﻿body {
+    font-family: 'Century Gothic';
+}
+
+img{
+    width: 400px;
+    height: 400px;
+}
+
+ul{
+    display:inline-block;
+    list-style-type:none;
+}
