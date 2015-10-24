@@ -5,7 +5,7 @@ var i;
 var createGrid = function () {
     $(".btnGrid").hide();
     for (i = 0; i < 4; i++) {
-        if (i % 2 === 0) {
+        if (i % 4 === 0) {
             row = $('<tr></tr>');
             $(".btnGrid").append(row);
         }
@@ -23,7 +23,7 @@ var createGrid = function () {
 var j = 0;
 var createItem = function () {
     $(".btnGrid").hide();
-    if (j % 2 === 0) {
+    if (j % 4 === 0) {
         row = $('<tr></tr>');
         $(".btnGrid").append(row);
     }
