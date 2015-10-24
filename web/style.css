@@ -5,12 +5,11 @@
   background-image: url('http://coarchitects.com/wp-content/uploads/2012/12/Engineering-2_03.jpg');
   left: 0;
   margin: 0;
-  overflow: auto;
+  overflow: hidden;
 }
 
 .main
 {
- 
     display:none;
     position:relative;
     margin:0;
@@ -79,11 +78,10 @@
 
 .control
 {
-    
-    
+    position:relative;
     font-family:'Century Gothic';
     color:bisque;
-    
+    top:-10px;
 
     background: #202024 url('http://s3.amazonaws.com/codecademy-content/courses/ltp2/img/uber/black-thread.png') repeat left top;
     left: -300px;  /* start off behind the scenes */
@@ -96,6 +94,10 @@
 {
     padding: 10px 10px 10px 10px;
     list-style-type:none;
+}
+
+.control li:hover{
+    color:aqua;
 }
 
 table{
@@ -122,9 +124,11 @@ tr{
 }
 
 .mainScreen {
+    padding: 20px;
     font-family: 'Century Gothic';
     position:relative;
     display:none;
+    overflow:auto;
 }
 .map {
     float: left;
@@ -138,4 +142,8 @@ tr{
     width: 50%;
     height: 50%;
     padding: 20px;
+}
+
+.testButton {
+
 }
