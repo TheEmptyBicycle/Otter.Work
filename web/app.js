@@ -1,16 +1,18 @@
 // JavaScript source code
 var main = function () {
+    $('.main').fadeIn(500);
     $('#loginScreen').fadeIn();
     $('#cover').fadeIn();
-    $('.main').fadeIn(500);
     $('.optionBar').fadeIn(500);
-    $('.titleBar').fadeIn(500);
     $('.mainScreen').fadeIn(500);
     
     //login button
     $('.loginButton').click(function () {
         $('#loginScreen').fadeOut();
         $('#cover').fadeOut();
+        $('.titleBar').fadeIn(500);
+        $('.map').fadeIn(500);
+        $('.btnLayout').fadeIn(500);
     })
 
     // Pull out panel
