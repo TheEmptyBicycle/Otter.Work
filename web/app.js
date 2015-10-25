@@ -1,11 +1,17 @@
 // JavaScript source code
 var main = function () {
+    $('#loginScreen').fadeIn();
+    $('#cover').fadeIn();
     $('.main').fadeIn(500);
     $('.optionBar').fadeIn(500);
     $('.titleBar').fadeIn(500);
     $('.mainScreen').fadeIn(500);
-
-    var ControlOut = false;
+    
+    //login button
+    $('.loginButton').click(function () {
+        $('#loginScreen').fadeOut();
+        $('#cover').fadeOut();
+    })
 
     // Pull out panel
     $('.hControl').click(function () {
