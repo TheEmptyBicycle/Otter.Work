@@ -1,9 +1,11 @@
 ﻿body
 {
+  background:no-repeat;
+  background-color:bisque;
   background-image: url('http://coarchitects.com/wp-content/uploads/2012/12/Engineering-2_03.jpg');
   left: 0;
   margin: 0;
-  overflow: hidden;
+  overflow:auto;
 }
 
 .main
@@ -110,15 +112,60 @@ tr{
 
 .mainScreen {
     font-family: 'Century Gothic';
+    display:inline;
 }
+
 .map {
     float: left;
-    width: 30%;
-    height: 50%;
+    width:300px;
+    height:300px;
+    padding: 25px;
 }
 
 .btnLayout {
-    float: right;
-    width: 65%;
-    height: 50%;
+    float:right;
+   width: 400px;
+    height:300px;
+    padding: 25px;
+}
+
+#cover{
+    position:fixed;
+    top:0;
+    left:0;
+    background:rgba(0, 0, 0, .6);
+    z-index:5;
+    width:100%;
+    height:100%;
+    display:none;
+}
+
+#newItemScreen {
+    text-align:center;
+    height: 400px;
+    width: 350px;
+    position:relative;
+    top: -50px;
+    margin: 0 auto;
+    z-index:10;
+    display: none;
+    background-color:gainsboro;
+}
+
+#newItemScreen:target, #newItemScreen:target + #cover {
+    display: block;
+    opacity: 2;
+}
+
+.cancel {
+    display:block;
+    margin: 0 auto;
+    position:relative;
+    top:30px;
+    background-color:aquamarine;
+    color:black;
+    height:50px;
+    width: 50px;
+    font-size:20px;
+    text-align:center;
 }

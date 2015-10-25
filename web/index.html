@@ -44,30 +44,25 @@
     </div>
     
     <div class="mainScreen">
-        <div class="map" id="map">
+        <div class="map" id="map">could not be displayed
 
         </div>
         <div class="btnLayout">
-            <table class="btnGrid">
-                <tr>
-                    <td>Hari</td>
-                    <td>Joe</td>
-                </tr>
-                <tr>
-                    <td>Jerry</td>
-                    <td>Nikola</td>
-                </tr>
-                <tr>
-                    <td>I'm</td>
-                    <td><a href="http://www/yelp.com">Hungry</a></td>
-                </tr>
+            <table class="btnGrid" id="btnGrid">
             </table>
         </div>
+        <a href="#newItemScreen">Add New!</a>
     </div>
-
+    <div id="newItemScreen">
+        <h1>Welcome to Otter.</h1>
+        <a href="#" class="cancel">Go!</a>
+    </div>
+    <div id="cover"></div>
+     
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCKpBzS0xntbWClg4_fy6M2DhyQw8wm2Q4 &callback=initMap"
             async defer></script>
+    <script src="tableFile.js" type="text/javascript"></script>
     <script src="map.js" type="text/javascript"></script>
     <script src="app.js"></script>
 </body>
