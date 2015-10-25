@@ -1,16 +1,20 @@
 ﻿body
 {
-  background:no-repeat;
-  background-color:bisque;
+    background:no-repeat;
+    background-color:slategrey;
   background-image: url('http://coarchitects.com/wp-content/uploads/2012/12/Engineering-2_03.jpg');
   left: 0;
   margin: 0;
-  overflow:auto;
+  overflow: hidden;
+  height:100vh;
 }
 
 .main
 {
-    padding: 20px;
+    display:none;
+    position:relative;
+    margin:0;
+    height:100%;
 }
 
 .titleBar
@@ -20,6 +24,7 @@
     color:bisque;
     font-size:large;
     text-shadow: 7px 12px 12px #808080;
+    display:none;
 }
 
 .titleBar ul
@@ -31,6 +36,10 @@
     display:inline;
 }
 
+.title{
+    font-size:xx-large;
+}
+
 .optionBar
 {
     background-image: url('http://cdn01.wallconvert.com/_media/wallpapers_1680x1050/1/2/black-wood-10727.jpg');
@@ -38,6 +47,9 @@
     font-family:'Century Gothic';
     color:bisque;
     font-size:small;
+    position:relative;
+    top:-15px;
+    display:none;
 }
 
 .optionBar ul
@@ -68,11 +80,10 @@
 
 .control
 {
-    
-    
+    position:relative;
     font-family:'Century Gothic';
     color:bisque;
-    
+    top:-10px;
 
     background: #202024 url('http://s3.amazonaws.com/codecademy-content/courses/ltp2/img/uber/black-thread.png') repeat left top;
     left: -300px;  /* start off behind the scenes */
@@ -87,16 +98,20 @@
     list-style-type:none;
 }
 
+.control li:hover{
+    color:aqua;
+}
+
 table{
     width:100%;
-    position: center;
     text-shadow: 2px 2px 2px #808080;
 }
 
 td {
     border: 1px;
     opacity: 40;
-    height:100px;
+    height:25%;
+    width:25%;
     padding: 10px;
     background-color:gainsboro;
 }
@@ -111,61 +126,67 @@ tr{
 }
 
 .mainScreen {
+    padding: 20px;
     font-family: 'Century Gothic';
-    display:inline;
+    position:relative;
+    display:none;
+    overflow:auto;
 }
-
 .map {
     float: left;
-    width:300px;
-    height:300px;
-    padding: 25px;
+    width: 40%;
+    height: 70vh;
+    padding: 20px;
+    background: #202024 url('http://s3.amazonaws.com/codecademy-content/courses/ltp2/img/uber/black-thread.png') repeat left top;
+    color:bisque;
 }
 
 .btnLayout {
-    float:right;
-   width: 400px;
-    height:300px;
-    padding: 25px;
+    float: right;
+    width: 50%;
+    height: 70vh;
+    padding: 20px;
+    overflow-y: scroll;
 }
 
-#cover{
+#cover {
     position:fixed;
-    top:0;
-    left:0;
-    background:rgba(0, 0, 0, .6);
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.8);
     z-index:5;
     width:100%;
     height:100%;
     display:none;
 }
 
-#newItemScreen {
-    text-align:center;
-    height: 400px;
-    width: 350px;
-    position:relative;
-    top: -50px;
+#loginScreen {
+    height: 600px;
+    width: 500px;
     margin: 0 auto;
+    position:relative;
+    top:-650px;
     z-index:10;
-    display: none;
+    display:none;
     background-color:gainsboro;
+    color:bisque;
 }
 
-#newItemScreen:target, #newItemScreen:target + #cover {
-    display: block;
-    opacity: 2;
+#loginScreen:target, #loginScreen:target + #cover {
+    display:block;
+    opacity:2;
 }
 
-.cancel {
+.loginButton {
     display:block;
     margin: 0 auto;
     position:relative;
-    top:30px;
-    background-color:aquamarine;
-    color:black;
-    height:50px;
-    width: 50px;
-    font-size:20px;
+    top: 400px;
+    background: burlywood;
+    color: black;
+    height: 80px;
+    width: 60px;
+    font-size:30px;
+    text-decoration:none;
     text-align:center;
 }
