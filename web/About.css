@@ -1,12 +1,12 @@
 body {
     font-family: 'Century Gothic';
-    background-image: url('https://scontent.fsnc1-1.fna.fbcdn.net/hphotos-xtf1/v/t34.0-12/12178117_10153329588462039_2093079357_n.jpg?oh=1ac9bb1656bb4fc78370c90552b4003e&oe=562E1E15');
+    background-image: url('https://scontent.fsnc1-1.fna.fbcdn.net/hphotos-xpa1/v/t35.0-12/12176164_10153329591732039_131202298_o.jpg?oh=dd87ae94ec1b162654c4ce7d2cdb67db&oe=562F654C');
     background-color: #d4e9ff;
     left: 0;
     margin: 0;
     overflow: hidden;
     position: absolute;
-    opacity: 0.5;
+    </--opacity: 0.5;-->
 }
 
 img{
@@ -27,4 +27,3 @@ ul{
     color:bisque;
     font-size:xx-large;
     text-shadow: 7px 12px 12px #808080;
-}
