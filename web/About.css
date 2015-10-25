@@ -1,34 +1,109 @@
 body {
+    background:no-repeat;
     font-family: 'Century Gothic';
     background-image: url('https://scontent.fsnc1-1.fna.fbcdn.net/hphotos-xpa1/v/t35.0-12/12176164_10153329591732039_131202298_o.jpg?oh=dd87ae94ec1b162654c4ce7d2cdb67db&oe=562F654C');
     background-color: #d4e9ff;
+    background-size:cover;
     left: 0;
+    margin: 0;
     margin: auto;
-    overflow: scroll;
+    overflow: hidden;
     position: relative;
     align-items:center;
-    </--opacity: 0.5;-->
 }
+
 
 td {
     width: 30%;
 }
 
+/*.main
+{
+    display:none;
+    position:relative;
+    margin:0;
+    height:100%;
+}
+    */
+
+/*
 img{
     width: 200px;
     height: 200px;
 }
-
+    */
 ul{
     display:inline;
     list-style-type:none;
 }
 
+.titleBar {
+    height: 100%;
+    font-family: 'Century Gothic';
+    color: bisque;
+    font-size: xx-large;
+    text-shadow: 7px 12px 12px #808080;
+}
 
-.titleBar
+.optionBar
 {
+    background-image: url('http://cdn01.wallconvert.com/_media/wallpapers_1680x1050/1/2/black-wood-10727.jpg');
     height: 100%;
     font-family:'Century Gothic';
     color:bisque;
-    font-size:xx-large;
-    text-shadow: 7px 12px 12px #808080;
+    font-size:small;
+    position:relative;
+    top:0px;
+    /*display:none;*/
+} 
+
+.optionBar ul
+{
+    padding: 10px 10px 10px 10px;
+}
+
+.optionBar li
+{
+    display: inline;
+}
+
+.optionBar a{
+    text-decoration: none;
+}
+
+.optionBar a:link{
+    color:bisque;
+}
+
+.optionBar a:visited{
+    color:bisque;
+}
+
+.optionBar a:hover{
+    color:aqua;
+}
+
+.control
+{
+    position:relative;
+    font-family:'Century Gothic';
+    color:bisque;
+    top:-10px;
+
+    background: #202024 url('http://s3.amazonaws.com/codecademy-content/courses/ltp2/img/uber/black-thread.png') repeat left top;
+    left: -300px;  /* start off behind the scenes */
+    height: 100%;
+    position: fixed;
+    width: 300px;
+}
+
+.control ul
+{
+    padding: 10px 10px 10px 10px;
+    list-style-type:none;
+}
+
+.control li:hover{
+    color:aqua;
+}
+
