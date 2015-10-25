@@ -139,6 +139,7 @@ tr{
     padding: 20px;
     background: #202024 url('http://s3.amazonaws.com/codecademy-content/courses/ltp2/img/uber/black-thread.png') repeat left top;
     color:bisque;
+    display:none;
 }
 
 .btnLayout {
@@ -147,6 +148,7 @@ tr{
     height: 70vh;
     padding: 20px;
     overflow-y: scroll;
+    display:none;
 }
 
 #cover {
@@ -165,7 +167,7 @@ tr{
     width: 500px;
     margin: 0 auto;
     position:relative;
-    top:-650px;
+    top:0px;
     z-index:10;
     display:none;
     background-color:gainsboro;
