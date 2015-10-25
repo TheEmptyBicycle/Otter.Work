@@ -22,7 +22,6 @@ var createGrid = function () {
 }
 var j = 0;
 var createItem = function () {
-    $(".btnGrid").hide();
     if (j % 4 === 0) {
         row = $('<tr></tr>');
         $(".btnGrid").append(row);
@@ -33,7 +32,7 @@ var createItem = function () {
     var status = $('<p></p>').text("Testing: Added " + j);
     item.append(course, nMembers, status);
     row.append(item);
+    item.hide();
     item.fadeIn(500);
-    $(".btnGrid").fadeIn();
     j++;
 }
