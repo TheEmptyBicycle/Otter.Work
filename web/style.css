@@ -1,11 +1,12 @@
 ﻿body
 {
-    background:no-repeat;
-    background-color:slategrey;
-  background-image: url('http://coarchitects.com/wp-content/uploads/2012/12/Engineering-2_03.jpg');
+  background:no-repeat;
+  background-color:slategrey;
+  background-image: url(homeImageBackground.jpg);
+  background-size: cover;
   left: 0;
   margin: 0;
-  overflow: hidden;
+  overflow:hidden;
   height:100vh;
 }
 
@@ -21,9 +22,10 @@
 {
     height: 100%;
     font-family:'Century Gothic';
-    color:bisque;
-    font-size:large;
-    text-shadow: 7px 12px 12px #808080;
+    color:aqua;
+    font-size:40px;
+    font-weight:bold;
+    text-shadow: 7px 5px 10px rgba(0, 0, 0, 0.8);
     display:none;
 }
 
@@ -37,7 +39,7 @@
 }
 
 .title{
-    font-size:xx-large;
+    font-size:70px;
 }
 
 .optionBar
