@@ -3,15 +3,20 @@ body {
     background-image: url('https://scontent.fsnc1-1.fna.fbcdn.net/hphotos-xpa1/v/t35.0-12/12176164_10153329591732039_131202298_o.jpg?oh=dd87ae94ec1b162654c4ce7d2cdb67db&oe=562F654C');
     background-color: #d4e9ff;
     left: 0;
-    margin: 0;
-    overflow: hidden;
-    position: absolute;
+    margin: auto;
+    overflow: scroll;
+    position: relative;
+    align-items:center;
     </--opacity: 0.5;-->
 }
 
+td {
+    width: 30%;
+}
+
 img{
-    width: 25%;
-    height: 40%;
+    width: 200px;
+    height: 200px;
 }
 
 ul{
