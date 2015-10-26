@@ -1,0 +1,43 @@
+body{
+    font-size:16px;
+    font-family:'Century Gothic';
+    text-align:center;
+    padding:30px;
+}
+
+#whole{
+    margin:0 auto;
+    padding-bottom: 25px;
+    width 200px;
+    border: 1px solid black;
+}
+
+#chatbox{
+    text-align:left;
+    border: 1px solid black;
+    margin: 0 auto;
+    margin-bottom:25px;
+    height:300px;
+    width: 400px;
+    overflow:auto;
+}
+
+#usermsg{
+    width: 400px;
+    border: 1px solid black;
+}
+
+#submit{
+    width:50px;
+}
+
+#menu{
+    padding:12px 25px 12px 25px;
+}
+.greet{
+    float:left;
+}
+
+.logout{
+    float:right;
+}
