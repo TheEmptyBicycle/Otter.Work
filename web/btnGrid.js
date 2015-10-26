@@ -21,15 +21,16 @@ var createGrid = function () {
     $(".btnGrid").fadeIn();
 }
 var j = 0;
-var createItem = function () {
+var createItem = function (courseName, locName) {
+    var num = Math.round(Math.random() *20);
     if (j % 4 === 0) {
         row = $('<tr></tr>');
         $(".btnGrid").append(row);
     }
     var item = $('<td></td>');
-    var course = $('<h3></h3>').text("COURSE101");
-    var nMembers = $('<p></p>').text("#");
-    var status = $('<p></p>').text("Testing: Added " + j);
+    var course = $('<h3></h3>').text(courseName);
+    var nMembers = $('<p></p>').text(num + " member(s)");
+    var status = $('<p></p>').text(locName);
     item.append(course, nMembers, status);
     row.append(item);
     item.hide();

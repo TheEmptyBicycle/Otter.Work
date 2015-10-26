@@ -1,9 +1,7 @@
 ﻿body
 {
-  background:no-repeat;
+  
   background-color:slategrey;
-  background-image: url(homeImageBackground.jpg);
-  background-size: cover;
   left: 0;
   margin: 0;
   overflow:hidden;
@@ -12,6 +10,9 @@
 
 .main
 {
+    background:no-repeat;
+    background-image: url(bio-med7.jpg);
+    background-size: cover;
     display:none;
     position:relative;
     margin:0;
@@ -36,6 +37,15 @@
 
 .titleBar ul li{
     display:inline;
+}
+
+.titleBar a{
+    text-decoration: none;
+    color: aqua;
+ }
+ 
+ .titleBar a:hover{
+    color: bisque;
 }
 
 .title{
@@ -102,6 +112,20 @@
 
 .control li:hover{
     color:aqua;
+}
+
+.addMenu
+{
+    position:relative;
+    font-family:'Century Gothic';
+    color:bisque;
+    top:-10px;
+
+    background: #202024 url('http://s3.amazonaws.com/codecademy-content/courses/ltp2/img/uber/black-thread.png') repeat left top;
+    right: -300px;  /* start off behind the scenes */
+    height: 100%;
+    position: fixed;
+    width: 300px;
 }
 
 table{
