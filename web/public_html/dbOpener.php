@@ -1,9 +1,10 @@
 <?php
-$username = "OtterDBAdmin";
-$password = "JerryLauis#1";
-$hostname = "localhost";
+//Fill in this info only when files are secure, not in public domain
+$username = "";
+$password = "";
+$hostname = "";
 // Create connection
-$dbhandle = new mysqli($hostname, $username, $password, "otterSessionDB")
+$dbhandle = new mysqli($hostname, $username, $password, /*DB Name */)
 	or die("unable to connect");
 	
 
