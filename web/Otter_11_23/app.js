@@ -1,19 +1,22 @@
 // JavaScript source code
 var main = function () {
-    $('.main').fadeIn(500);
-    $('#loginScreen').fadeIn();
-    $('#cover').fadeIn();
-    $('.optionBar').fadeIn(500);
-    $('.mainScreen').fadeIn(500);
-    
-    //login button
-    $('.loginButton').click(function () {
-        $('#loginScreen').fadeOut();
-        $('#cover').fadeOut();
-        $('.titleBar').fadeIn(500);
-        $('.map').fadeIn(500);
-        $('.btnLayout').fadeIn(500);
-    })
+
+$('.main').fadeIn(500);
+$('.optionBar').fadeIn(500);
+$('.mainScreen').fadeIn(500);
+$.post("checkLogin.php",
+        {},
+        function(data,status){
+            if (data == "empty"){
+               $('#loginScreen').fadeIn();
+               $('#cover').fadeIn(); 
+            }
+            else {
+               $('.titleBar').fadeIn(500);
+               $('.map').fadeIn(500);
+               $('.btnLayout').fadeIn(500);
+           }
+        });
 
     // Pull out panel
     $('.hControl').click(function () {

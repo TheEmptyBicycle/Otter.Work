@@ -1,0 +1,53 @@
+﻿body {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/6/67/UCSC_Humanities_building.jpg');
+    left: 0;
+    margin: 0;
+    overflow: hidden;
+    position: absolute;
+}
+
+.titleBar
+{
+    height: 100%;
+    font-family:'Century Gothic';
+    color:bisque;
+    font-size:xx-large;
+    text-shadow: 7px 12px 12px #808080;
+}
+
+.optionBar
+{
+    background-image: url('http://cdn01.wallconvert.com/_media/wallpapers_1680x1050/1/2/black-wood-10727.jpg');
+    height: 100%;
+    font-family:'Century Gothic';
+    color:bisque;
+    font-size:small;
+    position:relative;
+    top:-15px;
+}
+
+.optionBar ul
+{
+    padding: 10px 10px 10px 10px;
+}
+
+.optionBar li
+{
+    display: inline;
+}
+
+.optionBar a{
+    text-decoration: none;
+}
+
+.optionBar a:link{
+    color:bisque;
+}
+
+.optionBar a:visited{
+    color:bisque;
+}
+
+.optionBar a:hover{
+    color:aqua;
+}

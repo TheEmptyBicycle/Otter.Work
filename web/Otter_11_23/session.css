@@ -10,6 +10,7 @@ body{
     padding-bottom: 25px;
     width 200px;
     border: 1px solid black;
+    padding: 20px;
 }
 
 #chatbox{
@@ -40,4 +41,41 @@ body{
 
 .logout{
     float:right;
+}
+
+.optionBar
+{
+    background-image: url('http://cdn01.wallconvert.com/_media/wallpapers_1680x1050/1/2/black-wood-10727.jpg');
+    height: 100%;
+    font-family:'Century Gothic';
+    color:bisque;
+    font-size:small;
+    position:relative;
+    top:-15px;
+}
+
+.optionBar ul
+{
+    padding: 10px 10px 10px 10px;
+}
+
+.optionBar li
+{
+    display: inline;
+}
+
+.optionBar a{
+    text-decoration: none;
+}
+
+.optionBar a:link{
+    color:bisque;
+}
+
+.optionBar a:visited{
+    color:bisque;
+}
+
+.optionBar a:hover{
+    color:aqua;
 }

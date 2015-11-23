@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400;300' rel='stylesheet' type='text/css'>
+<head>
+    <title>Session</title>
+    <link rel="stylesheet" href="session.css"/>
+</head>
+
+<?php
+if(isset($_SESSION['name'])){
+    loginForm();
+}
+else{
+?>
+
+
+<body>
+    <div id="whole">
+        <div class="optionBar">
+            <ul>
+                <li><a href="http://otter.work/"><i class="fa fa-home"></i></a></li>
+                <li> | </li>
+                <li class="hControl"><i class="fa fa-bars"></i> <a>Control</a></li>
+                <li> | </li>
+                <li class="hTogether"> <a href="together.html"> Together </a></li>
+                <li> | </li>
+                <li class="hAbout"> <a href="About.html"> About </a></li>
+                <li> | </li>
+                <li><a href="mailto:theemptybicycle@otter.work"> Contact Us </a></li>
+            </ul>
+        </div>
+        <div id="menu">
+            <p class="greet"> Welcome, <b><?php echo $_SESSION['name']; ?></b></p>
+            <p class="logout"><a id="exit" href="#">Leave</a></p>
+        </div>
+        
+        <div id="chatbox"></div>
+        
+        <form name="message" action="">
+            <input name="usermsg" type="text" id="usermsg" size="63"/>
+            <input name="submitmsg" type="submit" id="submit" value="Send"/>
+        </form>
+    </div>
+    
+    <script type="text/javascript" src="chat.js"></script>
+<?php
+}
+
+</body>
+</html>
