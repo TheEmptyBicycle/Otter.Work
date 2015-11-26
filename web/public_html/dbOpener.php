@@ -1,4 +1,5 @@
 <?php
+<<<<<<< HEAD
 $username = "";
 $password = "";
 $hostname = "";
@@ -6,6 +7,14 @@ $hostname = "";
 // Create connection
 static $dbhandle;
 $dbhandle = new mysqli($hostname, $username, $password, "")
+=======
+//Fill in this info only when files are secure, not in public domain
+$username = "";
+$password = "";
+$hostname = "";
+// Create connection
+$dbhandle = new mysqli($hostname, $username, $password, /*DB Name */)
+>>>>>>> origin/master
 	or die("unable to connect");
 	
 
@@ -36,6 +45,7 @@ else {
 
 $dbhandle->close();
 
+<<<<<<< HEAD
 
 
 function sanitize($input, $db) {
@@ -63,3 +73,6 @@ function sanitize($input, $db) {
 }
 
 ?>
+=======
+?>
+>>>>>>> origin/master
