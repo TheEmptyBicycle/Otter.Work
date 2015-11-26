@@ -1,6 +1,5 @@
 <?php
 
-
 $name = $_REQUEST['name'];
 $location = $_REQUEST['location'];
 

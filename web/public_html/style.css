@@ -1,3 +1,12 @@
+.alignRight {
+   float:right;
+   }
+   
+.alignLeft {
+float:left;
+}
+
+
 body
 {
   
@@ -62,10 +71,12 @@ body
     position:relative;
     top:-15px;
     display:none;
+    
 }
 
 .optionBar ul
 {
+    
     padding: 10px 10px 10px 10px;
 }
 

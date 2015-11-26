@@ -1,1 +1,12 @@
 [23-Nov-2015 08:01:37 UTC] PHP Fatal error:  Call to undefined function elcho() in /home/theemptybicycle/public_html/checkLogin.php on line 4
+[26-Nov-2015 00:40:55 UTC] PHP Fatal error:  Call to undefined function sanitize() in /home/theemptybicycle/public_html/dbOpener.php on line 13
+[26-Nov-2015 00:41:18 UTC] PHP Fatal error:  Call to undefined function sanitize() in /home/theemptybicycle/public_html/dbOpener.php on line 13
+[26-Nov-2015 00:42:06 UTC] PHP Fatal error:  Call to undefined function sanitize() in /home/theemptybicycle/public_html/dbOpener.php on line 13
+[26-Nov-2015 00:47:07 UTC] PHP Fatal error:  Call to undefined function sanitize() in /home/theemptybicycle/public_html/dbOpener.php on line 13
+[26-Nov-2015 01:07:51 UTC] PHP Fatal error:  Non-static method mysqli::real_escape_string() cannot be called statically in /home/theemptybicycle/public_html/dbOpener.php on line 63
+[26-Nov-2015 01:09:51 UTC] PHP Fatal error:  Non-static method mysqli::escape_string() cannot be called statically in /home/theemptybicycle/public_html/dbOpener.php on line 63
+[26-Nov-2015 01:11:58 UTC] PHP Fatal error:  Call to a member function real_escape_string() on a non-object in /home/theemptybicycle/public_html/dbOpener.php on line 63
+[26-Nov-2015 01:12:11 UTC] PHP Fatal error:  Call to a member function real_escape_string() on a non-object in /home/theemptybicycle/public_html/dbOpener.php on line 63
+[26-Nov-2015 01:12:58 UTC] PHP Fatal error:  Call to a member function real_escape_string() on a non-object in /home/theemptybicycle/public_html/dbOpener.php on line 63
+[26-Nov-2015 01:18:01 UTC] PHP Fatal error:  Call to undefined function get_my_db() in /home/theemptybicycle/public_html/dbOpener.php on line 63
+[26-Nov-2015 01:19:39 UTC] PHP Fatal error:  Call to a member function real_escape_string() on a non-object in /home/theemptybicycle/public_html/dbOpener.php on line 64

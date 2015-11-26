@@ -8,7 +8,7 @@ function submitLogin() {
           password: password
         },
         function(data,status){
-            if (data == "Invalid"){
+            if (data != "Correct"){
                $("#loginMsg").text("Invalid Username or Passord, try again.");
             }
             else {
