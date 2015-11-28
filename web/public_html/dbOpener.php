@@ -1,11 +1,11 @@
 <?php
-$username = "OtterDBAdmin";
-$password = "JerryLauis#1";
-$hostname = "localhost";
+$username = "";
+$password = "";
+$hostname = "";
 
 // Create connection
 static $dbhandle;
-$dbhandle = new mysqli($hostname, $username, $password, "otterSessionDB")
+$dbhandle = new mysqli($hostname, $username, $password, "")
 	or die("unable to connect");
 	
 
