@@ -15,8 +15,21 @@ $.post("checkLogin.php",
                $('.titleBar').fadeIn(500);
                $('.map').fadeIn(500);
                $('.btnLayout').fadeIn(500);
+               updateGreeting();
            }
         });
+        
+    function updateGreeting(){
+    $.ajax({
+       type: "GET",
+       url: 'checkLogin.php',
+       data: '',
+       success: function(data) {
+       // data is username
+       $('#userGreeting').text("Welcome, " + data + "!");
+       }
+     }); 
+     }   
 
     // Pull out panel
     $('.hControl').click(function () {

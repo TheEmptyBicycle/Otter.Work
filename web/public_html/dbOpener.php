@@ -1,20 +1,11 @@
 <?php
-<<<<<<< HEAD
-$username = "";
-$password = "";
-$hostname = "";
+$username = "OtterDBAdmin";
+$password = "JerryLauis#1";
+$hostname = "localhost";
 
 // Create connection
 static $dbhandle;
-$dbhandle = new mysqli($hostname, $username, $password, "")
-=======
-//Fill in this info only when files are secure, not in public domain
-$username = "";
-$password = "";
-$hostname = "";
-// Create connection
-$dbhandle = new mysqli($hostname, $username, $password, /*DB Name */)
->>>>>>> origin/master
+$dbhandle = new mysqli($hostname, $username, $password, "otterSessionDB")
 	or die("unable to connect");
 	
 
@@ -31,6 +22,7 @@ $result = $dbhandle->query($query);
 
 if ($result->num_rows > 0){
 	while($row = $result->fetch_assoc()) {
+        //echo "- Username: " . $row["Username"]. "\n- School: " . $row["School"];
         if ( $row["Password"] === ($p)){
         	echo "Correct";
         }
@@ -45,7 +37,6 @@ else {
 
 $dbhandle->close();
 
-<<<<<<< HEAD
 
 
 function sanitize($input, $db) {
@@ -73,6 +64,3 @@ function sanitize($input, $db) {
 }
 
 ?>
-=======
-?>
->>>>>>> origin/master

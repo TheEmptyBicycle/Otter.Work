@@ -48,7 +48,7 @@ body
     display:inline;
 }
 
-.titleBar a{
+.titleBar a, button{
     text-decoration: none;
     color: DeepSeaGreen;
  }
@@ -67,9 +67,8 @@ body
     height: 100%;
     font-family:'Century Gothic';
     color:bisque;
-    font-size:small;
+    font-size:20px;
     position:relative;
-    top:-15px;
     display:none;
     
 }
@@ -100,6 +99,14 @@ body
 
 .optionBar a:hover{
     color:DeepSeaGreen;
+    text-decoration:underline;
+}
+
+#userGreeting {
+   padding: 15px 15px 15px 15px;
+   position: relative;
+   font-size: 20px;
+
 }
 
 .control
@@ -182,7 +189,7 @@ tr{
 .map {
     float: left;
     width: 40%;
-    height: 70vh;
+    height: 60vh;
     padding: 20px;
     background: #202024 url('http://s3.amazonaws.com/codecademy-content/courses/ltp2/img/uber/black-thread.png') repeat left top;
     color:bisque;

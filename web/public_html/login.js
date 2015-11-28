@@ -19,7 +19,25 @@ function submitLogin() {
                $('.btnLayout').fadeIn(500);
                
                $.post("userData.php", { name: username, location: "Santa Cruz" });
+               updateGreeting();
                }
         });
 
  }
+ 
+     function updateGreeting(){
+    $.ajax({
+       type: "GET",
+       url: 'checkLogin.php',
+       data: '',
+       success: function(data) {
+       // data is username
+       if (data == "empty"){
+          updateGreeting();
+       }
+       else {
+          $('#userGreeting').text("Welcome " + data + "!");
+       }
+       }
+     }); 
+     }  
